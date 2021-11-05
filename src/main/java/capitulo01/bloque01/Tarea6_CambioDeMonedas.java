@@ -15,7 +15,12 @@ public class Tarea6_CambioDeMonedas {
 		System.out.println("Introduzca con cuanto desea pagarlo:");
 		pago = sc.nextInt();
 		System.out.println("El pago es de: " + pago);
-	
+		if (cuenta > pago) {
+			System.out.println("Error, el pago es menor a la cuenta");				
+		}
+		if (cuenta < pago) {
+			
+		
 	cambio = pago - cuenta;
 	m100 = cambio/100;
 	System.out.println("Monedas de 100: " + m100 + " = " + m100*100);
@@ -41,5 +46,8 @@ public class Tarea6_CambioDeMonedas {
 	System.out.println("Monedas de 1: " + m1 + " = " + m1*1);
 	System.out.println("Total de cambio: " + cambio +"€");
 	
+	
+	}
 	}
 }
+

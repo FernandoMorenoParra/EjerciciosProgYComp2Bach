@@ -77,6 +77,7 @@ public class Tarea6_MenuDeOpciones {
 			System.out.println(" 2 = SI");
 		    seguir = sc.nextInt();
 		    System.out.println("Aplicacion cerrada");
+		    System.out.println("Gracias por usarme :D");
 			break;
 		default:
 			System.out.println("Error, opcion incorrecta");

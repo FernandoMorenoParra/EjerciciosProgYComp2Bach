@@ -43,8 +43,6 @@ public class Tarea6_CalculadoraAvanzada {
   
   
   }
+  }	
   }
-	
-
-}
 
