@@ -20,7 +20,6 @@ public class Tarea6_CambioDeMonedas {
 		}
 		if (cuenta < pago) {
 			
-		
 	cambio = pago - cuenta;
 	m100 = cambio/100;
 	System.out.println("Monedas de 100: " + m100 + " = " + m100*100);
@@ -45,9 +44,8 @@ public class Tarea6_CambioDeMonedas {
 	m1 = c5/1;
 	System.out.println("Monedas de 1: " + m1 + " = " + m1*1);
 	System.out.println("Total de cambio: " + cambio +"€");
-	
-	
+		
 	}
 	}
-}
+    }
 
