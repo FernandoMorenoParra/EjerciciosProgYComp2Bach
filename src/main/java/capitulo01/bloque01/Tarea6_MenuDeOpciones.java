@@ -7,7 +7,7 @@ public class Tarea6_MenuDeOpciones {
 		public static void main(String[] args) {
 			Scanner sc = new Scanner(System.in);
 			int opcion, seguir = 1 ;
-			double num, num2, cat, rc, ind, pi, dc, pc, at, ar;
+			double num, num2, cat, rc, ind;
 			while (seguir == 1) {
 			
 	        System.out.println("Menú de la calculadora");
@@ -26,28 +26,21 @@ public class Tarea6_MenuDeOpciones {
 			num = sc.nextInt();
 			System.out.println("Introduzca el segundo cateto del triangulo: ");
 			num2 = sc.nextInt();
-			ind = 2;
-			rc = 1/ind;
-		    cat = Math.pow(num, 2) + Math.pow(num2, 2);		
-		    System.out.println("La hipotenusa es: " +  (Math.pow(cat, rc)));	  
+		    System.out.println("La hipotenusa es: " +  (Math.hypot(num, num2)));	  
 		    System.out.println("Teclea 1 para volver al menu"); 
 		    seguir = sc.nextInt();
 		    break;
 		case 2:
 			System.out.println("Introduzca un radio: ");
 			num = sc.nextInt();
-			pi = 3.1416;
-			dc = Math.pow(num, 2) * pi;
-			System.out.println("La superficie de la circufenrencia es: " + dc);
+			System.out.println("La superficie de la circufenrencia es: " + (Math.PI * num * num));
 			 System.out.println("Teclea 1 para volver al menu"); 
 			    seguir = sc.nextInt();
 			break;
 		case 3:
 			System.out.println("Introduzca un radio: ");
 			num = sc.nextInt();
-			pi = 3.1416;
-			pc = 2 * pi * num;
-			System.out.println("El perimentro de la circunferencia es: " + pc);
+			System.out.println("El perimentro de la circunferencia es: " +  (Math.PI * num * 2));
 			 System.out.println("Teclea 1 para volver al menu"); 
 			    seguir = sc.nextInt();
 			break;
@@ -56,8 +49,7 @@ public class Tarea6_MenuDeOpciones {
 			num = sc.nextInt();
 			System.out.println("Introduzca la altura del rectangulo: ");
 			num2 = sc.nextInt();
-			ar = num * num2;
-			System.out.println("El area del rectangulo es: " + ar);
+			System.out.println("El area del rectangulo es: " + (num * num2));
 			 System.out.println("Teclea 1 para volver al menu"); 
 			    seguir = sc.nextInt();
 			break;
@@ -66,8 +58,7 @@ public class Tarea6_MenuDeOpciones {
 			num = sc.nextInt();
 			System.out.println("Introduzca la altura del triangulo: ");
 			num2 = sc.nextInt();
-			at = (num * num2) / 2;
-			System.out.println("El area del triangulo es: " + at);
+			System.out.println("El area del triangulo es: " + ((num * num2) / 2));
 			 System.out.println("Teclea 1 para volver al menu"); 
 			    seguir = sc.nextInt();
 			break;	

@@ -18,28 +18,27 @@ public class Tarea6_CalculadoraAvanzada {
   
   opcion = sc.nextInt();
   switch (opcion) {
-  case 1: 
-	  System.out.println("Introduzca un numero: ");
+  case 1: //Cálculo de la potencia
+	  System.out.println("Introduzca la base: ");
 	  num = sc.nextInt();
-	  System.out.println("Introduzca un exponente: ");
+	  System.out.println("Introduzca el exponente: ");
 	  num2 = sc.nextInt();
 	  System.out.println("La potencia es: " + (Math.pow(num, num2)));
 	  break;
-  case 2:
-	  System.out.println("Introduzca un numero: ");
+  case 2: //Cálculo de la raiz
+	  System.out.println("Introduzca el radicando de la raiz: ");
 	  num = sc.nextFloat();
-	  System.out.println("Introduzca un indice: ");
-	  ind = sc.nextFloat();
-	  num2 = 1/ind;
-	 System.out.println("La raiz es: " + (num * num2));
+	  System.out.println("Introduzca el indice: ");
+	  num2 = sc.nextFloat();
+	
+	 System.out.println("La raiz es: " + Math.pow(num, 1f/num2));
 	  break;
-	  
-  case 3:
-	  System.out.println("Introduzca un numero: ");
+  case 3: //Cálculo del modulo
+	  System.out.println("Introduzca el dividendo: ");
 	  num = sc.nextInt();
-	  System.out.println("Introduzca un divisor: ");
+	  System.out.println("Introduzca el divisor: ");
 	  num2 = sc.nextInt();
-	  System.out.println("El módulo es: " + num%num2);
+	  System.out.println("El módulo es: " + (num%num2));
   
   
   }
