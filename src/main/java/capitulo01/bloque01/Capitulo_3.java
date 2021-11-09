@@ -12,5 +12,12 @@ public class Capitulo_3 {
 	for(int i = 10; i>0 ; i-- ) {
 		System.out.println(i);
 	}
-}
+    System.out.println("Genereacion de numero al azar");
+    for(int i = 0; i<10 ; i++ ) {
+    	int numAzar = (int) Math.round(Math.random() * 100);
+    	System.out.println("Numero al azar: " + numAzar);
+    }
+	
+	
+	}
 }
