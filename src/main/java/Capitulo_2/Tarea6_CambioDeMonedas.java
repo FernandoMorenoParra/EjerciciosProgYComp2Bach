@@ -1,11 +1,11 @@
-package capitulo01.bloque01;
+package Capitulo_2;
 
 import java.util.Scanner;
 
 public class Tarea6_CambioDeMonedas {
 
 	public static void main(String[] args) {
-		int m100, c100,m50, c50, m25, c25, m10, c10, m5, c5, m1, c1, cuenta, cambio, pago;
+		int  cuenta, cambio, pago;
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Introduzca la cuenta: ");
@@ -21,7 +21,6 @@ public class Tarea6_CambioDeMonedas {
 		if (cuenta < pago) {
 			
 	cambio = pago - cuenta;
-	m100 = cambio/100;
 	System.out.println("Monedas de 100: " + (cambio/100));
 	cambio &= 100;
 	System.out.println("Monedas de 50: " +  (cambio/50));

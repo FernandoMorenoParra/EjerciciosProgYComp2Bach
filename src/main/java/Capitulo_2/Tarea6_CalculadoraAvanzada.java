@@ -1,4 +1,4 @@
-package capitulo01.bloque01;
+package Capitulo_2;
 
 import java.util.Scanner;
 
