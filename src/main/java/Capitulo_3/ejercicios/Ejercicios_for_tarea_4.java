@@ -13,11 +13,11 @@ public class Ejercicios_for_tarea_4 {
     for (int i = 0; i < repeticiones; i++) {
 		System.out.println("Introduzca un número");
 		num = sc.nextInt();
-		suma = suma + num;
+		//suma = suma + num;
 		contador++;
 	
-    media = suma/contador;
-    System.out.println("La media de los numeros es igual a: " + media);
+   // media = suma/contador;
+   // System.out.println("La media de los numeros es igual a: " + media);
 	}
 	}
 
