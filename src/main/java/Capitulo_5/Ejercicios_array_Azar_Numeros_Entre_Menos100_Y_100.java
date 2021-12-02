@@ -1,7 +1,5 @@
 package Capitulo_5;
 
-import javax.swing.text.html.HTMLDocument.HTMLReader.SpecialAction;
-
 public class Ejercicios_array_Azar_Numeros_Entre_Menos100_Y_100 {
 
 	public static void main(String[] args) {
