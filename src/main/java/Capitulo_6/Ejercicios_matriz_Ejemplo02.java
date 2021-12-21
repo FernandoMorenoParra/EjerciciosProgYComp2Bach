@@ -7,7 +7,6 @@ public class Ejercicios_matriz_Ejemplo02 {
 				int matriz[][] = new int[3][3];
 
 				inicializaMatriz(matriz);
-				
 				muestraMatriz(matriz);
 			}
 
@@ -20,8 +19,8 @@ public class Ejercicios_matriz_Ejemplo02 {
 				for (int i = 0; i < matriz.length; i++) {
 					for (int j = 0; j < matriz[i].length; j++) {
 						matriz[i][j] = (int) Math.round(Math.random() * 100);
-					}
-				}		
+			}
+			}		
 			}
 			
 			/**
@@ -33,8 +32,8 @@ public class Ejercicios_matriz_Ejemplo02 {
 				for (int i = 0; i < matriz.length; i++) {
 					for (int j = 0; j < matriz[i].length; j++) {
 						System.out.print(matriz[i][j] + " ");
-					}
-					System.out.println();
-				}
 			}
-		}
+					System.out.println();
+			}
+			}
+		    }
