@@ -3,41 +3,42 @@ package Capitulo_6;
 public class Ejercicios_matriz_Tarea01 {
 
 	public static void main(String[] args) {
-		int matriz[][] = new int[][] {  { 3, 5, 6, 8, 9 },
-			{10, 13, 16, 18, 19}, 
-			{21, 24, 26, 27, 29}, 
-			{31, 33, 35, 38, 39}, 
-			{42, 43, 44, 47, 49} };
-			
+		int matriz[][] = new int[][] {{10, 20, 30}, 
+			                          {40, 50, 60}, 	
+			                          {70, 80, 90}};
+muestraMatriz(matriz);
+sonElementosNuloDebajoDiagonal(matriz);
+}
+	
+	/**
+	 * 
+	 * @param matriz
+	 */
+	
+	public static void muestraMatriz (int matriz[][]) {
+		// Visualizar los elementos de la matriz en la consola
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+			System.out.print(matriz[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+	
+	/**
+	 * 
+	 * @param matriz
+	 */
+	
+	public static void sonElementosNuloDebajoDiagonal (int[][] matriz) {
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz.length; j++) {
+				if(j < i && j < 0) {
+}					
+}
+}
+}
 }
 
 
 
-/**
-* 
-* @param matriz
-*/
-public static void mostrarMatriz (int matriz[][]) {
-for (int i = 0; i < matriz.length; i++) {
-for (int j = 0; j < matriz[i].length; j++) {
-System.out.print(matriz[i][j] + " ");
-}
-}
-}
-/**
-* 
-* @param matriz
-* @return
-*/
-public static boolean MatrizP (int matriz[][]) {
-boolean resultado = true;
-for (int i = 0; i < matriz.length; i++) {
-for (int j = 0; j < matriz[i].length; j++) {
-if (matriz[i][j] < 0) {
-resultado = false;
-}
-}
-}
-return resultado;
-}
-}
